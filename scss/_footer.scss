@@ -3,30 +3,17 @@
 
 
 
-.footer1{
+footer{
     background-color: $secondary-color;
     color: $white;
-    font: $headings-font;
-    width: 100%;
-    box-sizing: border-box;
+    font-family: $headings-font;
     text-align: center;
-    padding: 20px;
-    margin: 10px 0;
-    height: 100%;
-  
+    font-weight: 400; //idk if we need this
+    padding: 1.25rem;
   @media (min-width: $desktop) {
-    padding: 10px 20px;
-    margin: 20px 0;
-    height: 100%;
+      padding: 10px 20px;
     }
     
-    @media (max-width: $tablet-small) {
-        padding: 15px; // Adjust padding for tablet size
-    
-        a {
-          margin-top: 8px; // Adjust margin for smaller screens
-        }
-      }
-      
-    }
+ 
+}
 
