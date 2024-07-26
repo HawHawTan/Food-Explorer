@@ -2,18 +2,17 @@
 @use "mixins" as *;
 
 
-
-footer{
+footer {
     background-color: $secondary-color;
     color: $white;
     font-family: $headings-font;
     text-align: center;
-    font-weight: 400; //idk if we need this
+    font-weight: 400;
     padding: 1.25rem;
-  @media (min-width: $desktop) {
-      padding: 10px 20px;
-    }
-    
- 
+        a {
+            color: $white;
+        }
+        @media (min-width: $tablet-small) {
+            padding: 10px 20px;
+        }
 }
-
