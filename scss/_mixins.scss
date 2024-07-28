@@ -46,7 +46,6 @@
 }
 
 // social icon animation to top
-
 @mixin animate-to-top {
   transform: translateY(1rem);
   transition: all 0.3s ease-in-out;
@@ -55,3 +54,4 @@
   transform: translateY(-1rem);
   transition: all 0.3s ease-in-out;
 }
+

@@ -1,5 +1,6 @@
 @use "vars" as *;
 @use "mixins" as *;
+
 // header general
 
 //for specificity we need to pull this out of the header selection below
@@ -11,12 +12,14 @@
   height: 12.8rem;
 }
 
+
 header {
   background-color: $aside-light;
   padding: 0;
   .header-desktop {
     display: none;
   }
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -164,7 +167,6 @@ header {
 
     @media (min-width: $tablet-small) {
         padding: 0;
-
             .btn-menu,
             .dropdown-box {
                 display: none;
