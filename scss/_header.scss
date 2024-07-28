@@ -4,7 +4,6 @@
 // header general
 
 //for specificity we need to pull this out of the header selection below
-
 .show .dropdown-box {
   // opening-transition
   transition: height 0.3s ease, visibility 0s;
@@ -12,51 +11,45 @@
   height: 12.8rem;
 }
 
-
 header {
   background-color: $aside-light;
-  padding: 0;
-  .header-desktop {
-    display: none;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $aside-light;
-    .search-bar,
-    .nav-bar,
-    .social-links {
-      display: none;
+  padding: 0.3rem 0.625rem;
+  
+    .header-desktop {
+        display: none;
     }
-    .btn-menu {
-      cursor: pointer;
-      transform: scale(.9);
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-right: 10px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 5px;
+        background-color: $aside-light;
+        .search-bar,
+        .nav-bar,
+        .social-links {
+            display: none;
+        }
+        .btn-menu {
+            cursor: pointer;
+        }
     }
-  }
-  // <---------- responsive logo start ---------->
-  .logo-small {
-    display: block;
-    margin-left: 10px;
-  }
-  .logo-large {
-    display: none;
-  }
-  @media (min-width: $mobile-large) {
+    // <---------- responsive logo start ---------->
     .logo-small {
-      display: none;
+        display: block;
     }
     .logo-large {
-      display: block;
-      width: 80%;
-      margin-left: 10px;
+        display: none;
     }
-  }
-
+    
+    @media (min-width: $mobile-large) {
+        .logo-small {
+            display: none;
+        }
+        .logo-large {
+            display: block;
+            width: 80%;
+        }
+    }
     // <---------- function dropdown toggle start ---------->
 
     .dropdown-box {
@@ -81,8 +74,10 @@ header {
     // dropdown-box style
 
     .dropdown-box {
-            border: 1px solid $secondary-color;
-        
+        z-index: 10000;
+        border-top: 1px solid black;
+        border-right: 1px solid $secondary-color;
+        border-bottom: 1px solid $secondary-color;
         .search-bar,
         ul li,
         .social-links {
@@ -90,9 +85,8 @@ header {
             justify-content: center;
             width: 100%;
             height: 1.8rem;
-            
         }
-
+        
         .search-bar {
             .search-bar-innerbox {
                 display: flex;
@@ -167,6 +161,7 @@ header {
 
     @media (min-width: $tablet-small) {
         padding: 0;
+
             .btn-menu,
             .dropdown-box {
                 display: none;
