@@ -7,11 +7,13 @@ footer {
     color: $white;
     font-family: $headings-font;
     text-align: center;
-    font-weight: 400;
+    font-weight: 400; //idk if we need this
     padding: 1.25rem;
+
         a {
             color: $white;
         }
+       
         @media (min-width: $tablet-small) {
             padding: 10px 20px;
         }
